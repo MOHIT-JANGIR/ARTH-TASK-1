@@ -15,4 +15,9 @@
 ![2020-11-01 (4)](https://user-images.githubusercontent.com/61896468/97840331-cf042a80-1d09-11eb-8c93-5739208fc9af.png)
 ![2020-11-01 (16)](https://user-images.githubusercontent.com/61896468/97840336-d0355780-1d09-11eb-8cbc-a1873c7e7ad4.png)
 ![2020-11-01 (17)](https://user-images.githubusercontent.com/61896468/97840341-d1ff1b00-1d09-11eb-89fa-4de7d4f67cb0.png)
+![image](https://user-images.githubusercontent.com/61896468/97843901-14c3f180-1d10-11eb-8197-76f56ebf6053.png)
+
+![image](https://user-images.githubusercontent.com/61896468/97843871-083f9900-1d10-11eb-987b-f57d1c353a3e.png)
+
+![image](https://user-images.githubusercontent.com/61896468/97843952-2ad1b200-1d10-11eb-86f2-4f89c33c2258.png)
 
