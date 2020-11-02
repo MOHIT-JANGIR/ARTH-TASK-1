@@ -29,24 +29,24 @@
 ![Screenshot 2020-11-02 10 00 51](https://user-images.githubusercontent.com/61896468/97840284-c0b60e80-1d09-11eb-93af-d71394a8b26f.png)
 # -->> From client , file is uploading.
 ![Screenshot 2020-11-02 10 03 47](https://user-images.githubusercontent.com/61896468/97840286-c14ea500-1d09-11eb-97da-531bec59fd99.png)
-# -->> in client packets file, Here client first connect to master to know which slave is available to use as master has all slave nodes metadata.
+# -->> We run tcpdump command on all the nodes as well as client to capture all the packets.
 ![Screenshot 2020-11-02 10 04 49](https://user-images.githubusercontent.com/61896468/97840288-c1e73b80-1d09-11eb-8eaa-428773f93bc2.png)
-# -->> Now client can directly connect to slave 1 to upload first block.
+# -->>  in client packets file, Here client first connect to master to know which slave is available to use as master has all slave nodes metadata.
 ![2020-11-01 (1)](https://user-images.githubusercontent.com/61896468/97840321-cad80d00-1d09-11eb-9101-d3002211361d.png)
-# -->> Again client connect to slave 1 to upload second block.
+# -->>  Now client can directly connect to slave 1 to upload first block.
 ![2020-11-01 (2)](https://user-images.githubusercontent.com/61896468/97840324-cc093a00-1d09-11eb-93c8-c49f643459a9.png)
-# -->> For final block,once again client contact slave 1.
+# -->> Again client connect to slave 1 to upload second block.
 ![2020-11-01 (3)](https://user-images.githubusercontent.com/61896468/97840327-cdd2fd80-1d09-11eb-80ad-e91dfc78612c.png)
-# -->> In slave 1 packets file, slave 1 is first contacted by client and file is uploaded in three blocks in slave 1 through client.
+# -->> For final block,once again client contact slave 1.
 ![2020-11-01 (4)](https://user-images.githubusercontent.com/61896468/97840331-cf042a80-1d09-11eb-8c93-5739208fc9af.png)
-# -->> Then slave 1 connect slave 2 to create replica.
+# -->>In slave 1 packets file, slave 1 is first contacted by client and file is uploaded in three blocks in slave 1 through client.
 ![2020-11-01 (16)](https://user-images.githubusercontent.com/61896468/97840336-d0355780-1d09-11eb-8cbc-a1873c7e7ad4.png)
-#  -->> In slave 2 packets file,as shown slave 2 is contacted by slave 1 and replica is created here .
+#  -->> Then slave 1 connect slave 2 to create replica.
 ![2020-11-01 (17)](https://user-images.githubusercontent.com/61896468/97840341-d1ff1b00-1d09-11eb-89fa-4de7d4f67cb0.png)
-#  -->> Then slave 2 send another replica to slave 3.
+#  -->> In slave 2 packets file,as shown slave 2 is contacted by slave 1 and replica is created here .
 ![image](https://user-images.githubusercontent.com/61896468/97843901-14c3f180-1d10-11eb-8197-76f56ebf6053.png)
-# *  -->> 
+# *  -->>  Then slave 2 send another replica to slave 3.*
 ![image](https://user-images.githubusercontent.com/61896468/97843871-083f9900-1d10-11eb-987b-f57d1c353a3e.png)
-
+#   -->> Slave 3 gets data from slave 2 to upload and hence third replica is also created in slave 3.
 ![image](https://user-images.githubusercontent.com/61896468/97843952-2ad1b200-1d10-11eb-86f2-4f89c33c2258.png)
 
