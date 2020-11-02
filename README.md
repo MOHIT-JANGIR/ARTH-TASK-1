@@ -1,9 +1,26 @@
+TEAM TASK NO 1 
+
+✴️ Whenever client uploads the file ( for ex - f.txt) of size 50MB and the replication is 3.
+✴️ Does client takes the entire data to master or does master provides the IP addresses of Datanodes so that client can upload the file to the Datanodes.
+✴️ Question: Who is the one uploading the file?
+✴️ Answer: Client gets the IP from Master and uploads the file to DataNode.
+
+
+
+# SOLUTION :
+
 ![Screenshot 2020-11-02 09 48 09](https://user-images.githubusercontent.com/61896468/97840252-b431b600-1d09-11eb-8631-f89817903f64.png)
+# First we go inside /etc/hadoop directory to configure hadoop configuration files.
 ![Screenshot 2020-11-02 13 05 59](https://user-images.githubusercontent.com/61896468/97841618-37540b80-1d0c-11eb-91a9-67b082972df0.png)
+# Here in slave hdfs-site.xml file we have put our dn directory to share with master.
 ![Screenshot 2020-11-02 09 52 48](https://user-images.githubusercontent.com/61896468/97840258-b6941000-1d09-11eb-8415-3a247764c2cc.png)
+# For master we have configured the same file also.
 ![Screenshot 2020-11-02 09 53 38](https://user-images.githubusercontent.com/61896468/97840260-b72ca680-1d09-11eb-94e6-d7568e8020a2.png)
+# Now we configure core-site.xml in all nodes including master,client and slave.
 ![Screenshot 2020-11-02 09 56 38](https://user-images.githubusercontent.com/61896468/97840264-b85dd380-1d09-11eb-983e-61c2ba04df24.png)
+# In slave and client ,give master public ip to do configuration.
 ![Screenshot 2020-11-02 09 57 29](https://user-images.githubusercontent.com/61896468/97840267-b98f0080-1d09-11eb-8500-7f0328e376b0.png)
+
 ![Screenshot 2020-11-02 09 59 56](https://user-images.githubusercontent.com/61896468/97840270-bac02d80-1d09-11eb-9fd5-ffd265ab49b0.png)
 ![Screenshot 2020-11-02 10 00 27](https://user-images.githubusercontent.com/61896468/97840275-bd228780-1d09-11eb-8fc1-78d191514e3a.png)
 ![Screenshot 2020-11-02 10 00 51](https://user-images.githubusercontent.com/61896468/97840284-c0b60e80-1d09-11eb-93af-d71394a8b26f.png)
