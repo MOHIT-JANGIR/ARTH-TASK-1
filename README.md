@@ -9,6 +9,9 @@
 
 # SOLUTION :
 
+![image](https://user-images.githubusercontent.com/61896468/97864546-c4a85780-1d2e-11eb-88c9-fe35c1891073.png)
+
+
 # First we go inside /etc/hadoop directory to configure hadoop configuration files.
 ![Screenshot 2020-11-02 09 48 09](https://user-images.githubusercontent.com/61896468/97840252-b431b600-1d09-11eb-8631-f89817903f64.png)
 # Here in slave hdfs-site.xml file we have put our dn directory to share with master.
